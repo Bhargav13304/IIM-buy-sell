@@ -1,0 +1,204 @@
+/* Global body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F5F5F5; /* light grey background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top navigation */
+.top-nav {
+    background-color: #0B3D91; /* dark blue */
+    padding: 15px 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+.top-nav a:hover {
+    background-color: #FF6F00; /* dark orange hover */
+}
+.chat-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75em;
+}
+
+/* Product list grid */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Product card */
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.2s;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+.product-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.product-card h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #0B3D91;
+    text-align: center;
+}
+.product-card p {
+    margin: 3px 0;
+    font-size: 0.95em;
+    text-align: center;
+}
+.product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #28a745; /* green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.product-card a:hover {
+    background-color: #218838;
+}
+
+/* Product details */
+.product-details {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.product-details img {
+    max-width: 300px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Chatbox */
+.chatbox {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.chatbox h3 {
+    margin: 0 0 10px;
+    color: #0B3D91;
+}
+#messages {
+    height: 250px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+#messages div {
+    margin-bottom: 8px;
+}
+#chat-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    font-size: 1em;
+}
+#send-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: background 0.3s;
+}
+#send-btn:hover {
+    background-color: #218838;
+}
+
+/* Forms (post_product.php) */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1em;
+}
+form button:hover {
+    background-color: #218838;
+}
+
+/* Messages */
+.message {
+    margin-bottom: 15px;
+    text-align: center;
+}
+a {
+    color: #FF6F00;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
