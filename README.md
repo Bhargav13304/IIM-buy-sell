@@ -28,12 +28,57 @@ It provides an easy-to-use interface for students, faculty, and staff to post, b
 ```bash
 git clone https://github.com/Bhargav13304/IIM-buy-sell.git
 cd IIM-buy-sell
+```
+
+### 2. Setup Database
+- Start **Apache** and **MySQL** via XAMPP Control Panel.  
+- Open [phpMyAdmin](http://localhost/phpmyadmin/).  
+- Create a new database named `iim_buy_sell`.  
+- Import the SQL file from `uploads/db.sql`.  
+
+### 3. Configure Database Connection
+```php
+<?php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "iim_buy_sell";
+$conn = new mysqli($host, $user, $password, $database);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+```
+
+### 4. Run the Application
+- Move the project folder to `htdocs` in XAMPP.  
+- Open in browser: [http://localhost/IIM-buy-sell](http://localhost/IIM-buy-sell).  
 
 ---
-## Setup Database
-- Start Apache and MySQL via XAMPP Control Panel.
-- Open phpMyAdmin (http://localhost/phpmyadmin/).
-- Create a new database named iim_buy_sell.
-- Import the SQL file from uploads/db.sql.
 
+## Folder Structure
+```
+IIM-buy-sell/
+│── uploads/            # Database connection & SQL files
+│── assets/             # CSS, JS, images
+│── index.php           # Homepage
+│── login.php           # User login
+│── register.php        # User registration
+│── product.php         # Product listing
+│── chat.php            # Buyer-seller chat
+│── admin_interface.php # Admin panel
+│── README.md
+```
 
+---
+
+## Future Enhancements
+- Payment gateway integration.  
+- Notification system for messages/offers.  
+- Mobile-friendly responsive UI.  
+- Advanced search filters.  
+
+---
+
+## License
+This project is licensed under the MIT License.  
