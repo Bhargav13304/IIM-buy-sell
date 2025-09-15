@@ -1,6 +1,6 @@
 # IIM Buy & Sell
 
-This project is a **web application** developed exclusively for the students of IIM Trichy.  
+This project is a **web application** developed  as part of an internship project for IIM Trichy exclusively for the students.  
 It is designed to provide a secure and convenient platform for students living in hostels to **buy, sell, or exchange products** within the campus community.  
 
 Students can list items they wish to sell — such as books, electronics, bicycles, or other personal belongings — and other students can browse these listings, express interest, and initiate conversations with sellers.  
