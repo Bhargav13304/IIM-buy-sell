@@ -28,3 +28,12 @@ It provides an easy-to-use interface for students, faculty, and staff to post, b
 ```bash
 git clone https://github.com/Bhargav13304/IIM-buy-sell.git
 cd IIM-buy-sell
+
+---
+## Setup Database
+- Start Apache and MySQL via XAMPP Control Panel.
+- Open phpMyAdmin (http://localhost/phpmyadmin/).
+- Create a new database named iim_buy_sell.
+- Import the SQL file from uploads/db.sql.
+
+
